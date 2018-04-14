@@ -7,6 +7,9 @@ function validate(properties, values) {
     return true;
 
 }
-
-console.log(validate(["name", "surname"], { name: "Roman", surname: "Rodomansky" }));
-console.log(validate(["name", "surname", "age"], { name: "Roman", surname: "Rodomansky" }));
+try {
+    console.log(validate(["name", "surname"], { name: "Roman", surname: "Rodomansky" }));
+    console.log(validate(["name", "surname", "age"], { name: "Roman", surname: "Rodomansky" }));
+} catch (e) {
+    console.log();
+}
