@@ -63,7 +63,7 @@ a {
     border: 1px solid #00695C;
 }
 
-.task-link:hover {
+.link:hover {
     transform: translateY(-3px);
     transition-duration: 0.2s;
     box-shadow: 0 0 15px rgb(2, 85, 71);
