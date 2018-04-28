@@ -1,7 +1,6 @@
 function reverseString(str) {
-    str = str.split("");
-    str = str.reverse();
-    str = str.join("");
-    return str
+    var str = str + '';
+    return str.split('').reverse().join('');
+
 }
 console.log(reverseString('hello world'));

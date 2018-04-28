@@ -1,11 +1,9 @@
 function titleCase(str) {
-    str = str.toLowerCase().split(' ');
+    var words = str.toLowerCase().split(' ');
 
-    for (var i = 0; i < str.length; i++) {
-        str[i] = str[i].split('');
-        str[i][0] = str[i][0].toUpperCase();
-        str[i] = str[i].join('');
+    for (var i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1);;
     }
-    return str.join(' ');
+    return words.join(' ');
 }
 console.log(titleCase("the quick brown fox"));

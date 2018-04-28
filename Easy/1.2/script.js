@@ -7,7 +7,7 @@ function returnMinAndMaxNumbers() {
         if (arr[i] > max) max = arr[i];
         if (arr[i] < min) min = arr[i];
     }
-    console.log("max: " + max, "min: " + min);
+    return { max: max, min: min };
 }
 
-returnMinAndMaxNumbers();
+console.log(returnMinAndMaxNumbers());

@@ -1,8 +1,10 @@
+const VAL = 26.5;
+
 function currencyConverter(number, currency) {
     if (currency == 'UAN') {
-        return number * 26.5;
+        return number * VAL;
     } else if (currency == 'USD') {
-        return number / 26.5;
+        return number / VAL;
     } else {
         return 'I like JS';
     }

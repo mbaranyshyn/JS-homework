@@ -1,5 +1,5 @@
 function reverseNumber(num) {
-    num = num + '';
+    var num = num + '';
     return num.split('').reverse().join('');
 
 }

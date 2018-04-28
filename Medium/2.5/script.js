@@ -1,16 +1,9 @@
 function firstNonRepeatedCharacter(str) {
-    var first;
+    for (var i = 0; i < str.length; i++) {
+        var first = str.split(str[i]).length - 1;
+        if (first === 1) return str[i];
+    }
 
-    str.split('').some(function(character, index, obj) {
-        if (obj.indexOf(character) === obj.lastIndexOf(character)) {
-            first = character;
-            return true;
-        }
-
-        return false;
-    });
-
-    return first;
 }
 
 console.log(firstNonRepeatedCharacter('abacddbec'));
